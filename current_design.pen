@@ -1,0 +1,1576 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "UBIhY",
+      "x": 0,
+      "y": 0,
+      "name": "BeaconLink Landing",
+      "width": 1440,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "PSYJ9",
+          "name": "navBar",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "gap": 32,
+          "padding": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "kb1f5",
+              "name": "logo",
+              "fill": "#4F46E5",
+              "content": "BeaconLink",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "mBPKW",
+              "name": "navLinks",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m8Gi7",
+                  "name": "linkFeature",
+                  "fill": "#64748B",
+                  "content": "Feature",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "7fia1",
+                  "name": "linkContact",
+                  "fill": "#64748B",
+                  "content": "Contact Us",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KxiLg",
+          "name": "hero",
+          "metadata": {
+            "type": "unsplash",
+            "username": "thatbangaloreanguy",
+            "link": "https://unsplash.com/@thatbangaloreanguy",
+            "author": "Karthik B K"
+          },
+          "width": "fill_container",
+          "height": 720,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/hero-bg.jpg",
+            "mode": "fill"
+          },
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            24
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "jHOD7",
+              "name": "heroContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Be3Vc",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Your Intelligent Personal Guide to Every Place That Tells a Story",
+                  "lineHeight": 1.25,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 60,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "O9Z4u",
+                  "name": "heroSub",
+                  "fill": "#E2E8F0",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "content": "A tiny wearable. Precise location awareness. Real-time personalized audio stories. Natural conversations. Immersive, adaptive adventures that unfold exactly where you stand.",
+                  "lineHeight": 1.625,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g3paA",
+              "name": "heroBtns",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q9KGQ",
+                  "name": "btnPrimary",
+                  "fill": "#4F46E5",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wTgBB",
+                      "name": "btnPrimaryText",
+                      "fill": "#FFFFFF",
+                      "content": "See How It Works",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PyBlS",
+                  "name": "btnSecondary",
+                  "fill": "#00000000",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#94A3B8"
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sBFwm",
+                      "name": "btnSecondaryText",
+                      "fill": "#FFFFFF",
+                      "content": "Request a Demo",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jzwvT",
+          "name": "valueProp",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "glMGB",
+              "name": "valuePropP1",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Many remarkable places still feel static, impersonal, or overwhelming — especially for visitors who move at different paces, speak different languages, or simply want a more personal connection.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "X24t3",
+              "name": "valuePropP2",
+              "fill": "#4338CA",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "BeaconLink transforms them. It turns passive wandering into deeply personal, responsive journeys — adapting in real time to who you are, what you care about, and exactly where you are.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2SiD9",
+          "name": "experience",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "BnPcZ",
+              "name": "experienceTitle",
+              "fill": "#0F172A",
+              "content": "The Experience",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "aNeRl",
+              "name": "experienceSub",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "What makes BeaconLink different — and why visitors love it.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "6MHp1",
+              "name": "experienceGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BSR6k",
+                  "name": "experienceRow1",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "srpFj",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pmwly",
+                          "name": "card1Icon",
+                          "fill": "#0F172A",
+                          "content": "🎯",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hTr4G",
+                          "name": "card1Title",
+                          "fill": "#0F172A",
+                          "content": "Hyper-Personalized Narration",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BsHUj",
+                          "name": "card1Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Content that evolves with your interests, pace, and location. Every step reveals stories tailored just for you.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZdEF8",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S6Lub",
+                          "name": "card2Icon",
+                          "fill": "#0F172A",
+                          "content": "💬",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CmHUg",
+                          "name": "card2Title",
+                          "fill": "#0F172A",
+                          "content": "Natural Voice Conversations",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KHGFw",
+                          "name": "card2Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Ask anything. Get thoughtful, context-aware replies. Your AI guide understands where you are and what you're experiencing.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "28gAk",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7b3GS",
+                          "name": "card3Icon",
+                          "fill": "#0F172A",
+                          "content": "✨",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bDUno",
+                          "name": "card3Title",
+                          "fill": "#0F172A",
+                          "content": "Seamless, Hands-Free Immersion",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "migN7",
+                          "name": "card3Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "No screens. No maps. Just you and the place coming alive — completely hands-free, triggered exactly where you stand.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z2qsh",
+                  "name": "experienceRow2",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S7uUi",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VL6Aj",
+                          "name": "card4Icon",
+                          "fill": "#0F172A",
+                          "content": "🌍",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8NT3N",
+                          "name": "card4Title",
+                          "fill": "#0F172A",
+                          "content": "Universal Accessibility",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ipCHl",
+                          "name": "card4Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Multiple languages, adaptive pacing, and support for hearing and mobility needs. Every visitor deserves the full experience.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Mx28a",
+                      "name": "card5",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4fSGW",
+                          "name": "card5Icon",
+                          "fill": "#0F172A",
+                          "content": "🔒",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Iz3OO",
+                          "name": "card5Title",
+                          "fill": "#0F172A",
+                          "content": "Privacy-Focused Group Safety",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "d5HNP",
+                          "name": "card5Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Opt-in features to know where your companions are — without hassle. Stay connected, stay safe, stay in control.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "85mrj",
+                      "name": "card6",
+                      "width": "fill_container",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#F1F5F9"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y660n",
+                          "name": "card6Icon",
+                          "fill": "#0F172A",
+                          "content": "📍",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2wnQP",
+                          "name": "card6Title",
+                          "fill": "#0F172A",
+                          "content": "Real-Time Location Precision",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oJF3o",
+                          "name": "card6Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Low-cost BLE beacons deliver pinpoint accuracy. Content activates precisely when and where it matters most.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qrTHz",
+          "name": "howItWorks",
+          "width": "fill_container",
+          "fill": "#EEF2FF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "pZYe8",
+              "name": "howTitle",
+              "fill": "#0F172A",
+              "content": "How It Works",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "iBfCZ",
+              "name": "howSub",
+              "fill": "#64748B",
+              "content": "Five simple steps to a completely transformed visit.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "z8uMp",
+              "name": "step1",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3FeTn",
+                  "name": "step1Num",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#4F46E5",
+                  "cornerRadius": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7ZOVd",
+                      "name": "step1NumText",
+                      "fill": "#FFFFFF",
+                      "content": "1",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "THSRb",
+                  "name": "step1Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1vh4O",
+                      "name": "step1Title",
+                      "fill": "#0F172A",
+                      "content": "Wear the device",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rsU3j",
+                      "name": "step1Desc",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Clip on the small, comfortable wearable — built for all-day use in active environments.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l7XJq",
+              "name": "step2",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Mn2Gb",
+                  "name": "step2Num",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#4F46E5",
+                  "cornerRadius": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "armSk",
+                      "name": "step2NumText",
+                      "fill": "#FFFFFF",
+                      "content": "2",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nPuE5",
+                  "name": "step2Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "P5Si6",
+                      "name": "step2Title",
+                      "fill": "#0F172A",
+                      "content": "Step into the space",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "91Ccx",
+                      "name": "step2Desc",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Enter any BeaconLink-enabled location. No setup, no pairing — it just works.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jg8Vp",
+              "name": "step3",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ybibE",
+                  "name": "step3Num",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#4F46E5",
+                  "cornerRadius": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kn9yJ",
+                      "name": "step3NumText",
+                      "fill": "#FFFFFF",
+                      "content": "3",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NASrT",
+                  "name": "step3Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bkHeA",
+                      "name": "step3Title",
+                      "fill": "#0F172A",
+                      "content": "Content activates precisely",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rtDPB",
+                      "name": "step3Desc",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "BLE beacons detect your position. Narration and stories trigger exactly where you stand.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aLHSf",
+              "name": "step4",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UOBLE",
+                  "name": "step4Num",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#4F46E5",
+                  "cornerRadius": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xHAbq",
+                      "name": "step4NumText",
+                      "fill": "#FFFFFF",
+                      "content": "4",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yW00X",
+                  "name": "step4Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4G87W",
+                      "name": "step4Title",
+                      "fill": "#0F172A",
+                      "content": "Speak naturally & explore",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8FLKb",
+                      "name": "step4Desc",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Ask questions, dive deeper, or simply listen. Your guide adapts to you in real time.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BCIk1",
+              "name": "step5",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o1X3U",
+                  "name": "step5Num",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#4F46E5",
+                  "cornerRadius": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HvzYt",
+                      "name": "step5NumText",
+                      "fill": "#FFFFFF",
+                      "content": "5",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dAJgX",
+                  "name": "step5Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "q4AXi",
+                      "name": "step5Title",
+                      "fill": "#0F172A",
+                      "content": "Stay connected with your group",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fwMi1",
+                      "name": "step5Desc",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Optional opt-in features keep you and your companions in sync — with full privacy control.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gHZCw",
+          "name": "deviceShowcase",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "h3vGw",
+              "name": "deviceTitle",
+              "fill": "#0F172A",
+              "content": "Designed for Discovery",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "QEpsw",
+              "name": "deviceSub",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "Small, discreet, comfortable — built for all-day wear in active environments.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "dGyIm",
+              "name": "deviceRow",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "It2WQ",
+                  "name": "deviceCard1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "FTPD6",
+                      "name": "deviceImg1",
+                      "fill": "#CBD5E1",
+                      "width": "fill_container",
+                      "height": 224
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2pM4w",
+                      "name": "deviceCard1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rpzG7",
+                          "name": "deviceCard1Title",
+                          "fill": "#0F172A",
+                          "content": "Clip-on style",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5jtkD",
+                          "name": "deviceCard1Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 380,
+                          "content": "Attach to collar, pocket, or bag. Unobtrusive and secure.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4vORL",
+                  "name": "deviceCard2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "NKFWv",
+                      "name": "deviceImg2",
+                      "fill": "#CBD5E1",
+                      "width": "fill_container",
+                      "height": 224
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BpBaf",
+                      "name": "deviceCard2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hgQ8q",
+                          "name": "deviceCard2Title",
+                          "fill": "#0F172A",
+                          "content": "Earpiece style",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ewIyw",
+                          "name": "deviceCard2Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 380,
+                          "content": "Hands-free audio, comfortable for hours of exploration.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "osW3G",
+                  "name": "deviceCard3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "qX5dA",
+                      "name": "deviceImg3",
+                      "fill": "#CBD5E1",
+                      "width": "fill_container",
+                      "height": 224
+                    },
+                    {
+                      "type": "frame",
+                      "id": "arB4B",
+                      "name": "deviceCard3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oVd6v",
+                          "name": "deviceCard3Title",
+                          "fill": "#0F172A",
+                          "content": "Badge style",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tjRNu",
+                          "name": "deviceCard3Desc",
+                          "fill": "#64748B",
+                          "textGrowth": "fixed-width",
+                          "width": 380,
+                          "content": "Modern, minimal design. Fits naturally with any outfit.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "diJFb",
+          "name": "keyFeatures",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "P9PB6",
+              "name": "keyTitle",
+              "fill": "#0F172A",
+              "content": "Key Features",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Rmd7L",
+              "name": "keySub",
+              "fill": "#64748B",
+              "content": "Everything you need for a deeply personal, worry-free experience.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "9QEK9",
+              "name": "kf1",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#F1F5F9"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F7mJD",
+                  "name": "kf1Title",
+                  "fill": "#0F172A",
+                  "content": "Real-time, location-triggered AI narration & responses",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "eug2M",
+                  "name": "kf1Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Content activates the moment you arrive — no tapping, no searching.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OMF2G",
+              "name": "kf2",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#F1F5F9"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KwD9l",
+                  "name": "kf2Title",
+                  "fill": "#0F172A",
+                  "content": "Adaptive storytelling and interactive elements",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "3oDVF",
+                  "name": "kf2Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Stories evolve based on your interests, pace, and path through the space.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hjvIi",
+              "name": "kf3",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#F1F5F9"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VFmu1",
+                  "name": "kf3Title",
+                  "fill": "#0F172A",
+                  "content": "Multi-language support + accessibility modes",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "PlBH8",
+                  "name": "kf3Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Multiple languages, adaptive pacing, and support for diverse needs.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R2Bnh",
+              "name": "kf4",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#F1F5F9"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bweqP",
+                  "name": "kf4Title",
+                  "fill": "#0F172A",
+                  "content": "Secure, user-controlled group location features",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "NUcG8",
+                  "name": "kf4Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Opt-in Find My style features — you decide who sees what.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TJeDS",
+              "name": "kf5",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#F1F5F9"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "43aog",
+                  "name": "kf5Title",
+                  "fill": "#0F172A",
+                  "content": "Easy content curation tools",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Cbl4O",
+                  "name": "kf5Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Space operators can create and update experiences with intuitive tools.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NJHy4",
+          "name": "contact",
+          "width": "fill_container",
+          "fill": "#312E81",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "OmZQw",
+              "name": "contactTitle",
+              "fill": "#FFFFFF",
+              "content": "Ready to make every visit unforgettable?",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jhsDE",
+              "name": "contactSub",
+              "fill": "#C7D2FE",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "Experience places in a new way. Get in touch and we'll show you how BeaconLink can transform your next adventure.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "BpZQb",
+              "name": "contactForm",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9Lq5v",
+                  "name": "cfName",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6smdQ",
+                      "name": "cfNameLabel",
+                      "fill": "#C7D2FE",
+                      "content": "Name",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "eSQki",
+                      "name": "cfNameInput",
+                      "fill": "#FFFFFF1A",
+                      "width": "fill_container",
+                      "height": 48,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#6366F140"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "shBSE",
+                  "name": "cfEmail",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "z6ekd",
+                      "name": "cfEmailLabel",
+                      "fill": "#C7D2FE",
+                      "content": "Email",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "aBUuF",
+                      "name": "cfEmailInput",
+                      "fill": "#FFFFFF1A",
+                      "width": "fill_container",
+                      "height": 48,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#6366F140"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E1ur5",
+                  "name": "cfMsg",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CGEOd",
+                      "name": "cfMsgLabel",
+                      "fill": "#C7D2FE",
+                      "content": "Message",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "1dA4B",
+                      "name": "cfMsgInput",
+                      "fill": "#FFFFFF1A",
+                      "width": "fill_container",
+                      "height": 96,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#6366F140"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FhSUT",
+                  "name": "cfSubmit",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "#F97316",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hxFSR",
+                      "name": "cfSubmitText",
+                      "fill": "#FFFFFF",
+                      "content": "Request a Demo",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZFWFH",
+          "name": "footer",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#0F172A",
+          "layout": "vertical",
+          "padding": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "K2kXO",
+              "name": "footerText",
+              "fill": "#94A3B8",
+              "content": "© 2025 BeaconLink AI. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,3 +11,10 @@ html {
 body {
   @apply font-sans antialiased text-slate-800;
 }
+
+/* Flip cards: hover on desktop only, tap on mobile */
+@media (hover: hover) {
+  .experience-flip-card.group:hover .experience-flip-inner {
+    transform: rotateY(180deg);
+  }
+}

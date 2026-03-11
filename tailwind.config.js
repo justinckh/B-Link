@@ -41,6 +41,15 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
+      perspective: {
+        1000: '1000px',
+      },
+      transformStyle: {
+        '3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        hidden: 'hidden',
+      },
     },
   },
   plugins: [],
