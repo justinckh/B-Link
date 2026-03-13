@@ -378,73 +378,102 @@ function HowItWorks() {
         </p>
 
         <div className="relative">
-          {/* Road track — left-aligned on mobile (behind circles), centered on desktop */}
+          {/* Mobile: horizontal scroll of step cards */}
           <div
-            className="absolute top-0 bottom-0 left-[16px] md:left-1/2 md:-translate-x-1/2 w-2 md:w-3 bg-slate-700 rounded-full"
-            aria-hidden
-          />
-          <div
-            className="absolute top-0 bottom-0 left-5 md:left-1/2 md:-translate-x-px w-px border-l-2 border-dashed border-white/60"
-            aria-hidden
-          />
-
-          <div className="flex flex-col gap-6">
-            {howItWorksSteps.map((item, i) => {
-              const contentOnLeft = i % 2 === 0;
-              const num = i + 1;
-              const contentBlock = (
-                <div
-                  className={`${
-                    isVisible
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-4"
-                  } transition-all duration-500`}
-                  style={{ transitionDelay: `${i * 80}ms` }}
-                >
-                  <h3 className="text-base md:text-lg font-bold text-slate-900 italic uppercase tracking-wide mb-0.5">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              );
-
-              return (
-                <div
-                  key={item.title}
-                  className="relative min-h-[72px] items-center
-                    flex flex-row gap-4
-                    md:grid md:grid-cols-[1fr_auto_1fr] md:gap-4"
-                >
-                  {/* Left column — hidden on mobile, alternates on desktop */}
+            className="md:hidden overflow-x-auto overflow-y-hidden -mx-4 px-4 pb-2 scroll-smooth snap-x snap-mandatory"
+            style={{ WebkitOverflowScrolling: "touch" }}
+          >
+            <div className="flex gap-4 min-w-min">
+              {howItWorksSteps.map((item, i) => {
+                const num = i + 1;
+                return (
                   <div
-                    className={`hidden md:block min-w-0 py-1 ${
-                      contentOnLeft ? "md:pr-6 md:text-right" : ""
-                    }`}
+                    key={item.title}
+                    className={`shrink-0 w-[78vw] max-w-[300px] snap-center rounded-2xl border border-slate-200/90 bg-white shadow-sm overflow-hidden ${
+                      isVisible
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-4"
+                    } transition-all duration-500`}
+                    style={{ transitionDelay: `${i * 60}ms` }}
                   >
-                    {contentOnLeft && contentBlock}
+                    <div
+                      className={`h-2 w-full ${item.color} opacity-95`}
+                      aria-hidden
+                    />
+                    <div className="p-4">
+                      <div
+                        className={`inline-flex items-center justify-center w-9 h-9 rounded-full ${item.color} text-white text-sm font-bold shadow mb-3`}
+                      >
+                        {num}
+                      </div>
+                      <h3 className="text-sm font-bold text-slate-900 italic uppercase tracking-wide mb-1.5">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 text-xs leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
+                );
+              })}
+            </div>
+          </div>
 
-                  {/* Colored numbered node */}
+          {/* Desktop: centered timeline with alternating left / right content */}
+          <div className="hidden md:block relative">
+            <div
+              className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-3 bg-slate-700 rounded-full"
+              aria-hidden
+            />
+            <div
+              className="absolute top-0 bottom-0 left-1/2 -translate-x-px w-px border-l-2 border-dashed border-white/60"
+              aria-hidden
+            />
+            <div className="flex flex-col gap-6">
+              {howItWorksSteps.map((item, i) => {
+                const contentOnLeft = i % 2 === 0;
+                const num = i + 1;
+                const contentBlock = (
                   <div
-                    className={`shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full ${item.color} text-white font-bold text-lg shadow-md z-10`}
+                    className={`${
+                      isVisible
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-4"
+                    } transition-all duration-500`}
+                    style={{ transitionDelay: `${i * 80}ms` }}
                   >
-                    {num}
+                    <h3 className="text-lg font-bold text-slate-900 italic uppercase tracking-wide mb-0.5">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-
-                  {/* Right column — always visible on mobile, alternates on desktop */}
-                  <div className="min-w-0 py-1 flex-1 md:flex-none md:pl-6">
-                    {/* Mobile: always show */}
-                    <div className="md:hidden">{contentBlock}</div>
-                    {/* Desktop: only show for odd steps */}
-                    <div className="hidden md:block">
+                );
+                return (
+                  <div
+                    key={item.title}
+                    className="relative min-h-[72px] grid grid-cols-[1fr_auto_1fr] items-center gap-4"
+                  >
+                    <div
+                      className={`min-w-0 py-1 ${
+                        contentOnLeft ? "pr-6 text-right" : ""
+                      }`}
+                    >
+                      {contentOnLeft && contentBlock}
+                    </div>
+                    <div
+                      className={`shrink-0 flex items-center justify-center w-12 h-12 rounded-full ${item.color} text-white font-bold text-lg shadow-md z-10`}
+                    >
+                      {num}
+                    </div>
+                    <div className="min-w-0 py-1 pl-6">
                       {!contentOnLeft && contentBlock}
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
