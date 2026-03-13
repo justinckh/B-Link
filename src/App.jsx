@@ -4,8 +4,9 @@
  * location-aware wearable AI companion for immersive physical spaces.
  */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import heroBgVideo from "../assets/herobg.mp4";
+import heroBgPoster from "../assets/hero-bg.jpg";
 import museumImage from "../assets/museum.webp";
 import themeparkImage from "../assets/themepark.jpg";
 import heritageImage from "../assets/heritage.jpeg";
@@ -68,17 +69,38 @@ function NavBar() {
 // HERO SECTION
 // =============================================================================
 function Hero() {
+  const videoRef = useRef(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  const setHalfSpeed = () => {
+    if (videoRef.current) videoRef.current.playbackRate = 0.5;
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Full-bleed background — video with bottom 5px cropped */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
+      {/* Poster shows instantly; video fades in when ready to avoid load glitch */}
       <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={heroBgPoster}
+          alt=""
+          className={`absolute top-0 left-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
+            videoReady ? "opacity-0" : "opacity-100"
+          }`}
+          aria-hidden
+        />
         <video
+          ref={videoRef}
           src={heroBgVideo}
+          preload="auto"
           autoPlay
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-full h-[calc(100%+5px)] object-cover object-top"
+          onLoadedMetadata={setHalfSpeed}
+          onCanPlay={() => setVideoReady(true)}
+          className={`absolute top-0 left-0 w-full h-[calc(100%+5px)] object-cover object-top transition-opacity duration-500 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
           aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
@@ -119,7 +141,10 @@ function ValueProposition() {
   const [setRef, isVisible] = useScrollAnimation(0.15);
 
   return (
-    <section ref={setRef} className="py-12 sm:py-16 md:py-20 lg:py-28 bg-slate-50">
+    <section
+      ref={setRef}
+      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-slate-50"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <p
           className={`text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 leading-relaxed transition-all duration-700 ${
@@ -188,36 +213,78 @@ const experienceCards = [
 
 const experienceIcons = {
   personalize: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <circle cx="12" cy="8" r="3" />
       <path d="M5 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1" />
     </svg>
   ),
   voice: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <path d="M12 2v4M8 6v4a4 4 0 0 0 8 0V6M4 14v2a8 8 0 0 0 16 0v-2" />
     </svg>
   ),
   handsFree: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <path d="M4 12h16M12 4a8 8 0 0 1 0 16" />
     </svg>
   ),
   accessibility: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <circle cx="12" cy="12" r="10" />
       <path d="M12 8v4M9 12h6" />
     </svg>
   ),
   group: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <circle cx="9" cy="7" r="2.5" />
       <circle cx="15" cy="7" r="2.5" />
       <path d="M5 20v-1a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v1" />
     </svg>
   ),
   location: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-6 h-6 text-indigo-600">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="w-6 h-6 text-indigo-600"
+    >
       <path d="M12 2C8 8 8 14 12 20c4-6 4-12 0-18z" />
       <circle cx="12" cy="10" r="2.5" />
     </svg>
@@ -248,9 +315,15 @@ function ExperienceHighlights() {
               }`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              <div className="absolute left-0 top-6 bottom-6 w-1 rounded-full bg-indigo-200 group-hover:bg-indigo-400 transition-colors duration-300" aria-hidden />
+              <div
+                className="absolute left-0 top-6 bottom-6 w-1 rounded-full bg-indigo-200 group-hover:bg-indigo-400 transition-colors duration-300"
+                aria-hidden
+              />
               <div className="flex items-start gap-4">
-                <span className="shrink-0 mt-0.5 p-2 rounded-lg bg-indigo-50 group-hover:bg-indigo-100 transition-colors duration-300" aria-hidden>
+                <span
+                  className="shrink-0 mt-0.5 p-2 rounded-lg bg-indigo-50 group-hover:bg-indigo-100 transition-colors duration-300"
+                  aria-hidden
+                >
                   {experienceIcons[card.icon]}
                 </span>
                 <div className="min-w-0">
@@ -656,7 +729,9 @@ function ContactForm() {
 function Footer() {
   return (
     <footer className="py-5 sm:py-6 md:py-8 px-4 bg-slate-900 text-slate-400 text-center">
-      <p className="text-xs sm:text-sm">© {new Date().getFullYear()} BeaconLink AI. All rights reserved.</p>
+      <p className="text-xs sm:text-sm">
+        © {new Date().getFullYear()} BeaconLink AI. All rights reserved.
+      </p>
     </footer>
   );
 }
