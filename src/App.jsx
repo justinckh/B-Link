@@ -5,6 +5,10 @@
  */
 
 import { useState, useEffect } from "react";
+import heroBgVideo from "../assets/herobg.mp4";
+import museumImage from "../assets/museum.webp";
+import themeparkImage from "../assets/themepark.jpg";
+import heritageImage from "../assets/heritage.jpeg";
 
 // =============================================================================
 // SCROLL ANIMATION HOOK — triggers fade-in/slide-up on scroll into view
@@ -66,12 +70,16 @@ function NavBar() {
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Full-bleed background — atmospheric space with subtle wearable */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1920&q=80"
-          alt="Person exploring a grand, atmospheric space"
-          className="w-full h-full object-cover"
+      {/* Full-bleed background — video with bottom 5px cropped */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          src={heroBgVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-[calc(100%+5px)] object-cover object-top"
+          aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
       </div>
@@ -393,21 +401,21 @@ const bestSuitedForCards = [
     title: "Museums",
     description:
       "Art, history, and science come alive with personalized audio tours. Multi-language support and hands-free narration let every visitor explore at their own pace.",
-    image: "https://images.unsplash.com/photo-1566127444979-b3d3b64cec4e?w=600&q=80",
+    image: museumImage,
     alt: "Museum gallery with visitors",
   },
   {
     title: "Themed parks & lands",
     description:
       "Immersive worlds deserve immersive guidance. Location-triggered stories, wayfinding, and optional group safety keep families connected while everyone enjoys the adventure.",
-    image: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=600&q=80",
+    image: themeparkImage,
     alt: "Themed park or immersive land",
   },
   {
     title: "Heritage & historic sites",
     description:
       "Monuments, ruins, and cultural districts tell deeper stories with context-aware narration. Accessibility modes and adaptive pacing make heritage accessible to all.",
-    image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80",
+    image: heritageImage,
     alt: "Historic or heritage site",
   },
 ];
