@@ -6,7 +6,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import heroBgVideo from "../assets/herobg.mp4";
-import heroBgPoster from "../assets/hero-bg.jpg";
 import museumImage from "../assets/museum.webp";
 import themeparkImage from "../assets/themepark.jpg";
 import heritageImage from "../assets/heritage.jpeg";
@@ -70,37 +69,24 @@ function NavBar() {
 // =============================================================================
 function Hero() {
   const videoRef = useRef(null);
-  const [videoReady, setVideoReady] = useState(false);
 
   const setHalfSpeed = () => {
     if (videoRef.current) videoRef.current.playbackRate = 0.5;
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
-      {/* Poster shows instantly; video fades in when ready to avoid load glitch */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Full-bleed background — video with bottom 5px cropped, 2x slower */}
       <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={heroBgPoster}
-          alt=""
-          className={`absolute top-0 left-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
-            videoReady ? "opacity-0" : "opacity-100"
-          }`}
-          aria-hidden
-        />
         <video
           ref={videoRef}
           src={heroBgVideo}
-          preload="auto"
           autoPlay
           muted
           loop
           playsInline
           onLoadedMetadata={setHalfSpeed}
-          onCanPlay={() => setVideoReady(true)}
-          className={`absolute top-0 left-0 w-full h-[calc(100%+5px)] object-cover object-top transition-opacity duration-500 ${
-            videoReady ? "opacity-100" : "opacity-0"
-          }`}
+          className="absolute top-0 left-0 w-full h-[calc(100%+5px)] object-cover object-top"
           aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
